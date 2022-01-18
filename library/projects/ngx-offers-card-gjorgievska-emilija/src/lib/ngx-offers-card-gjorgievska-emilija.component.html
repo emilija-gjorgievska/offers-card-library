@@ -1,0 +1,22 @@
+<div class="card-container">
+    <div class="offer-card">
+        <div class="sub-section">
+            <img [src]="logo" class="logo" alt="{{name}} Logo" />
+        </div>
+        <div class="sub-section">
+            <h4>{{name}}</h4>
+            <div class="stars" style="--rating: {{rating}};"></div>
+        </div>
+        <div class="sub-section">
+            <p class="title">{{depositBonusTitle.toUpperCase()}}</p>
+            <p>{{depositBonusDescription}}</p>
+        </div>
+        <div class="sub-section">
+            <p class="title">{{coinsTitle.toUpperCase()}}</p>
+            <p>{{coinsValue}}</p>
+        </div>
+        <div class="sub-section link-container">
+            <a [href]="websiteLink" target="_blank">{{buttonText.toUpperCase()}}</a>
+        </div>
+    </div>
+</div>

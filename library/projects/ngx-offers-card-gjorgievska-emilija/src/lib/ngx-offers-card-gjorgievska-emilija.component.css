@@ -1,0 +1,84 @@
+.card-container {
+  font-size: 17px;
+}
+
+.card-container .offer-card {
+  box-shadow: 0px 0px 12px -8px rgb(0 0 0);
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.card-container .offer-card:hover {
+  box-shadow: 0 1px 4px 1px rgb(0 0 0 / 27%);
+}
+
+.offer-card .sub-section {
+  padding: 1em;
+  text-align: center;
+}
+
+.sub-section .logo {
+  width: 250px;
+  max-width: 100%;
+}
+
+.sub-section h4 {
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-size: 1.2em;
+}
+
+.sub-section p {
+  color: #393838;
+  font-size: 1.1em;
+}
+
+.sub-section .title {
+  font-weight: bold;
+}
+
+.sub-section .stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.sub-section .stars::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(
+    90deg,
+    #ffc107 var(--percent),
+    #e0e0e0 var(--percent)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.offer-card .link-container {
+  margin-bottom: 1.1em;
+  flex: 100%;
+}
+
+.sub-section a {
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: #fff;
+  background: #78998b;
+  border-radius: 8px;
+}
+
+.sub-section a:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #405354;
+}
